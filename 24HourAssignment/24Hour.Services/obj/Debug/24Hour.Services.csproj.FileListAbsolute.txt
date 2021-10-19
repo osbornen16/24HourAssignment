@@ -1,0 +1,16 @@
+D:\ElevenFiftyProjects\Assignments\24HourProject\24HourAssignment\24Hour.Services\bin\Debug\24Hour.Services.dll.config
+D:\ElevenFiftyProjects\Assignments\24HourProject\24HourAssignment\24Hour.Services\bin\Debug\24Hour.Services.dll
+D:\ElevenFiftyProjects\Assignments\24HourProject\24HourAssignment\24Hour.Services\bin\Debug\24Hour.Services.pdb
+D:\ElevenFiftyProjects\Assignments\24HourProject\24HourAssignment\24Hour.Services\bin\Debug\EntityFramework.dll
+D:\ElevenFiftyProjects\Assignments\24HourProject\24HourAssignment\24Hour.Services\bin\Debug\EntityFramework.SqlServer.dll
+D:\ElevenFiftyProjects\Assignments\24HourProject\24HourAssignment\24Hour.Services\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\ElevenFiftyProjects\Assignments\24HourProject\24HourAssignment\24Hour.Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\ElevenFiftyProjects\Assignments\24HourProject\24HourAssignment\24Hour.Services\bin\Debug\EntityFramework.xml
+D:\ElevenFiftyProjects\Assignments\24HourProject\24HourAssignment\24Hour.Services\bin\Debug\EntityFramework.SqlServer.xml
+D:\ElevenFiftyProjects\Assignments\24HourProject\24HourAssignment\24Hour.Services\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\ElevenFiftyProjects\Assignments\24HourProject\24HourAssignment\24Hour.Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\ElevenFiftyProjects\Assignments\24HourProject\24HourAssignment\24Hour.Services\obj\Debug\24Hour.Services.csproj.AssemblyReference.cache
+D:\ElevenFiftyProjects\Assignments\24HourProject\24HourAssignment\24Hour.Services\obj\Debug\24Hour.Services.csproj.CoreCompileInputs.cache
+D:\ElevenFiftyProjects\Assignments\24HourProject\24HourAssignment\24Hour.Services\obj\Debug\24Hour.Services.csproj.CopyComplete
+D:\ElevenFiftyProjects\Assignments\24HourProject\24HourAssignment\24Hour.Services\obj\Debug\24Hour.Services.dll
+D:\ElevenFiftyProjects\Assignments\24HourProject\24HourAssignment\24Hour.Services\obj\Debug\24Hour.Services.pdb

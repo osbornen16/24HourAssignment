@@ -35,7 +35,7 @@ namespace _24Hour.Services
         }
 
         // R
-        public IEnumerable<ReplyListItem> GetReplyByAuthorId()
+        public IEnumerable<ReplyListItem> GetReplyByAuthorId(int id)
         {
             using (var ctx = new ApplicationDbContext())
             {

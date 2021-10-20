@@ -24,7 +24,7 @@ namespace _24HourAssignment.Controllers
 
         }
 
-        // C - PostPost
+        // C - PostReply
         public IHttpActionResult Post(ReplyCreate note)
         {
             if (!ModelState.IsValid)
@@ -38,21 +38,21 @@ namespace _24HourAssignment.Controllers
             return Ok();
         }
 
-        // R - GetAllPosts
+        // R - GetReplyByCommentId
         public IHttpActionResult Get()
         {
             ReplyService replyService = CreateReplyService();
-            var posts = replyService.GetReplies();
+            var posts = replyService.GetReplyByCommentId(id);
 
             return Ok(posts);
         }
 
-        // R - GetPostById
+        // R - GetReplyByAuthorId
 
         public IHttpActionResult Get(int id)
         {
             ReplyService replyService = CreateReplyService();
-            var post = replyService.GetReplyById(id);
+            var post = replyService.GetReplyByAuthorId(id);
             return Ok(post);
         }
 

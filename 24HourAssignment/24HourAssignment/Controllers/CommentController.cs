@@ -10,6 +10,7 @@ using System.Web.Http;
 
 namespace _24HourAssignment.Controllers
 {
+    [Authorize]
     public class CommentController : ApiController
     {
         // Helper Method
@@ -40,7 +41,7 @@ namespace _24HourAssignment.Controllers
         public IHttpActionResult Get()
         {
             CommentService commentService = CreateCommentService();
-            var posts = commentService.GetComments();
+            var posts = commentService.GetReplies();
 
             return Ok(posts);
         }

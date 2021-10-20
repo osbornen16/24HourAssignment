@@ -64,7 +64,7 @@ namespace _24Hour.Services
                 var entity =
                     ctx
                         .Comments
-                        .Single(e => e.CommentId == id && e.Id == _userId);
+                        .Single(e => e.Id == id && e.AuthorId == _userId);
                 return
                     new CommentDetail
                     {

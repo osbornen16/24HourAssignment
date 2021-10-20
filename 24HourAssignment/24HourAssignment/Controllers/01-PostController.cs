@@ -75,7 +75,7 @@ namespace _24HourAssignment.Controllers
         {
             var service = CreatePostService();
 
-            if (!service.DeleteReply(id))
+            if (!service.DeletePost(id))
                 return InternalServerError();
 
             return Ok();

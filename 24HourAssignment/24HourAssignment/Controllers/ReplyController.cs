@@ -11,28 +11,28 @@ using System.Web.Http;
 namespace _24HourAssignment.Controllers
 {
     [Authorize]
-    public class PostController : ApiController
+    public class ReplyController : ApiController
     {
 
         // Helper Method
-        private PostService CreatePostService()
+        private ReplyService CreateReplyService()
         {
-           
+
             var Id = Guid.Parse(User.Identity.GetUserId());
-            var postService = new PostService(Id);
-            return postService;
-           
+            var replyService = new ReplyService(Id);
+            return replyService;
+
         }
 
         // C - PostPost
-        public IHttpActionResult Post(PostCreate note)
+        public IHttpActionResult Post(ReplyCreate note)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var service = CreatePostService();
+            var service = CreateReplyService();
 
-            if (!service.CreatePost(note))
+            if (!service.CreateReply(note))
                 return InternalServerError();
 
             return Ok();
@@ -41,8 +41,8 @@ namespace _24HourAssignment.Controllers
         // R - GetAllPosts
         public IHttpActionResult Get()
         {
-            PostService postService = CreatePostService();
-            var posts = postService.GetPosts();
+            ReplyService replyService = CreateReplyService();
+            var posts = replyService.GetReplies();
 
             return Ok(posts);
         }
@@ -51,20 +51,20 @@ namespace _24HourAssignment.Controllers
 
         public IHttpActionResult Get(int id)
         {
-            PostService postService = CreatePostService();
-            var post = postService.GetPostById(id);
+            ReplyService replyService = CreateReplyService();
+            var post = replyService.GetReplyById(id);
             return Ok(post);
         }
 
         // U - PutPost
-        public IHttpActionResult Put(PostEdit post)
+        public IHttpActionResult Put(ReplyEdit reply)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var service = CreatePostService();
+            var service = CreateReplyService();
 
-            if (!service.UpdatePost(post))
+            if (!service.UpdateReply(reply))
                 return InternalServerError();
 
             return Ok();
@@ -73,7 +73,7 @@ namespace _24HourAssignment.Controllers
         // D - DeletePost
         public IHttpActionResult Delete(int id)
         {
-            var service = CreatePostService();
+            var service = CreateReplyService();
 
             if (!service.DeleteReply(id))
                 return InternalServerError();

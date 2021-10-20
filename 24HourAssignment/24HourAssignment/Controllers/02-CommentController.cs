@@ -55,6 +55,8 @@ namespace _24HourAssignment.Controllers
             return Ok(post);
         }
 
+        // R - GetCommentByCommentid
+
         // U - PutComment
         public IHttpActionResult Put(CommentEdit reply)
         {

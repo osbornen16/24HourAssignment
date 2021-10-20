@@ -15,8 +15,8 @@ namespace _24Hour.Data
         public string Title { get; set; }
         [Required]
         public string Text { get; set; }
-        // virtual list of Comments
-        // virtual list of Likes
+        public virtual List<Comment> Comments { get; set; }
+        public virtual List<Reply> Replies { get; set; }
         [Required]
         public Guid AuthorId { get; set; }
         public DateTimeOffset PostCreated { get; set; }

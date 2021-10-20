@@ -64,7 +64,7 @@ namespace _24Hour.Services
                 var entity =
                     ctx
                         .Replies
-                        .Single(e => e.ReplyId == id && e.CommentId == _userId);
+                        .Single(e => e.ReplyId == id && e.ReplyAuthorId == _userId);
                 return
                     new ReplyDetail
                     {

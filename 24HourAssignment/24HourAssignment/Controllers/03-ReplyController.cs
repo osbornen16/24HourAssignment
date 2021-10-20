@@ -41,13 +41,13 @@ namespace _24HourAssignment.Controllers
 
         // R - GetReplyByCommentId
 
-        public IHttpActionResult Get()
+      /*  public IHttpActionResult Get()
         {
             ReplyService replyService = CreateReplyService();
             var posts = replyService.GetReplyByCommentId(id);
 
             return Ok(posts);
-        }
+        }*/
 
         // R - GetReplyByAuthorId
 

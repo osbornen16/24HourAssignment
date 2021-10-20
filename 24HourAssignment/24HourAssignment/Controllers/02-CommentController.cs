@@ -38,22 +38,22 @@ namespace _24HourAssignment.Controllers
         }
 
         // R - GetAllComments
-        public IHttpActionResult Get()
+      /*  public IHttpActionResult Get()
         {
             CommentService commentService = CreateCommentService();
-            var posts = commentService.GetReplies();
+            var posts = commentService.GetComments();
 
             return Ok(posts);
-        }
+        }*/
 
         // R - GetCommentById
-
+/*
         public IHttpActionResult Get(int id)
         {
             CommentService commentService = CreateCommentService();
             var post = commentService.GetCommentById(id);
             return Ok(post);
-        }
+        }*/
 
         // R - GetCommentByCommentid
 

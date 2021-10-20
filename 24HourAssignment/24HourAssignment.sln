@@ -3,13 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31702.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "24HourAssignment", "24HourAssignment\24HourAssignment.csproj", "{E0994B6D-8B1C-4469-A496-190F03B6FEF5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00-24HourAssignment.WebAPI", "24HourAssignment\00-24HourAssignment.WebAPI.csproj", "{E0994B6D-8B1C-4469-A496-190F03B6FEF5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "24Hour.Data", "24Hour.Data\24Hour.Data.csproj", "{11ABF8C1-A56A-48C2-9A36-6C5684A065AB}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-24Hour.Data", "24Hour.Data\01-24Hour.Data.csproj", "{11ABF8C1-A56A-48C2-9A36-6C5684A065AB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "24Hour.Models", "24Hour.Models\24Hour.Models.csproj", "{D0FCA36B-92E8-40C6-9EBB-925E857E3F11}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02-24Hour.Models", "24Hour.Models\02-24Hour.Models.csproj", "{D0FCA36B-92E8-40C6-9EBB-925E857E3F11}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "24Hour.Services", "24Hour.Services\24Hour.Services.csproj", "{9D9BCEAE-BFAD-4C34-AAAB-E1F2A3173B9A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03-24Hour.Services", "24Hour.Services\03-24Hour.Services.csproj", "{9D9BCEAE-BFAD-4C34-AAAB-E1F2A3173B9A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

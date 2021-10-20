@@ -15,12 +15,13 @@ namespace _24Hour.Data
         public string Title { get; set; }
         [Required]
         public string Text { get; set; }
-        // virtual list of Comments
-        // virtual list of Likes
         [Required]
         public Guid AuthorId { get; set; }
+
         public DateTimeOffset PostCreated { get; set; }
         public DateTimeOffset PostModified { get; set; }
 
+        public virtual Comment Comment { get; set; }
+        public virtual Reply Reply { get; set; }
     }
 }

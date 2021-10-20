@@ -24,7 +24,7 @@ namespace _24HourAssignment.Controllers
 
         }
 
-        // C - PostPost
+        // C - PostReplies
         public IHttpActionResult Post(ReplyCreate note)
         {
             if (!ModelState.IsValid)
@@ -38,7 +38,7 @@ namespace _24HourAssignment.Controllers
             return Ok();
         }
 
-        // R - GetAllPosts
+        // R - GetAllRepliess
         public IHttpActionResult Get()
         {
             ReplyService replyService = CreateReplyService();
@@ -55,6 +55,8 @@ namespace _24HourAssignment.Controllers
             var post = replyService.GetReplyById(id);
             return Ok(post);
         }
+
+        // R - 
 
         // U - PutPost
         public IHttpActionResult Put(ReplyEdit reply)

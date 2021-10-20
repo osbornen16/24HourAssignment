@@ -15,6 +15,8 @@ namespace _24Hour.Data
         public string CommentText { get; set; }
         [Required]
         public Guid CommentAuthorId { get; set; }
+        // foreign key reference to "Post" Id
+
         public virtual Reply Reply { get; set; }
     }
 }

@@ -11,28 +11,27 @@ using System.Web.Http;
 namespace _24HourAssignment.Controllers
 {
     [Authorize]
-    public class PostController : ApiController
+    public class CommentController : ApiController
     {
-
         // Helper Method
-        private PostService CreatePostService()
+        private CommentService CreateCommentService()
         {
-           
+
             var Id = Guid.Parse(User.Identity.GetUserId());
-            var postService = new PostService(Id);
-            return postService;
-           
+            var commentService = new CommentService(Id);
+            return commentService;
+
         }
 
         // C - PostPost
-        public IHttpActionResult Post(PostCreate note)
+        public IHttpActionResult Post(CommentCreate note)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var service = CreatePostService();
+            var service = CreateCommentService();
 
-            if (!service.CreatePost(note))
+            if (!service.CreateComment(note))
                 return InternalServerError();
 
             return Ok();
@@ -41,8 +40,8 @@ namespace _24HourAssignment.Controllers
         // R - GetAllPosts
         public IHttpActionResult Get()
         {
-            PostService postService = CreatePostService();
-            var posts = postService.GetPosts();
+            CommentService commentService = CreateCommentService();
+            var posts = commentService.GetReplies();
 
             return Ok(posts);
         }
@@ -51,20 +50,20 @@ namespace _24HourAssignment.Controllers
 
         public IHttpActionResult Get(int id)
         {
-            PostService postService = CreatePostService();
-            var post = postService.GetPostById(id);
+            CommentService commentService = CreateCommentService();
+            var post = commentService.GetCommentById(id);
             return Ok(post);
         }
 
         // U - PutPost
-        public IHttpActionResult Put(PostEdit post)
+        public IHttpActionResult Put(CommentEdit reply)
         {
             if (!ModelState.IsValid)
                 return BadRequest(ModelState);
 
-            var service = CreatePostService();
+            var service = CreateCommentService();
 
-            if (!service.UpdatePost(post))
+            if (!service.UpdateComment(reply))
                 return InternalServerError();
 
             return Ok();
@@ -73,9 +72,9 @@ namespace _24HourAssignment.Controllers
         // D - DeletePost
         public IHttpActionResult Delete(int id)
         {
-            var service = CreatePostService();
+            var service = CreateCommentService();
 
-            if (!service.DeleteReply(id))
+            if (!service.DeleteComment(id))
                 return InternalServerError();
 
             return Ok();

@@ -35,7 +35,7 @@ namespace _24Hour.Services
         }
 
         // R
-        public IEnumerable<ReplyListItem> GetReplies()
+        public IEnumerable<ReplyListItem> GetReplyByAuthorId()
         {
             using (var ctx = new ApplicationDbContext())
             {
@@ -57,14 +57,14 @@ namespace _24Hour.Services
         }
 
         // R
-        public ReplyDetail GetReplyById(int id)
+        public ReplyDetail GetReplyByCommentId(int id)
         {
             using (var ctx = new ApplicationDbContext())
             {
                 var entity =
                     ctx
                         .Replies
-                        .Single(e => e.ReplyId == id && e.ReplyAuthorId == _userId);
+                        .Single(e => e.ReplyId == id && e.CommentId == _userId);
                 return
                     new ReplyDetail
                     {

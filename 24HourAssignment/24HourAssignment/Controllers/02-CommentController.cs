@@ -23,7 +23,7 @@ namespace _24HourAssignment.Controllers
 
         }
 
-        // C - PostPost
+        // C - PostComment
         public IHttpActionResult Post(CommentCreate note)
         {
             if (!ModelState.IsValid)
@@ -37,7 +37,7 @@ namespace _24HourAssignment.Controllers
             return Ok();
         }
 
-        // R - GetAllPosts
+        // R - GetAllComments
         public IHttpActionResult Get()
         {
             CommentService commentService = CreateCommentService();
@@ -46,7 +46,7 @@ namespace _24HourAssignment.Controllers
             return Ok(posts);
         }
 
-        // R - GetPostById
+        // R - GetCommentById
 
         public IHttpActionResult Get(int id)
         {
@@ -55,7 +55,7 @@ namespace _24HourAssignment.Controllers
             return Ok(post);
         }
 
-        // U - PutPost
+        // U - PutComment
         public IHttpActionResult Put(CommentEdit reply)
         {
             if (!ModelState.IsValid)
@@ -69,7 +69,7 @@ namespace _24HourAssignment.Controllers
             return Ok();
         }
 
-        // D - DeletePost
+        // D - DeleteComment
         public IHttpActionResult Delete(int id)
         {
             var service = CreateCommentService();
